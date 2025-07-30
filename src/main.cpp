@@ -6,7 +6,7 @@
 #include <memory>
 #include <SDL3_ttf/SDL_ttf.h>
 
-#include "triangle.h"
+#include "../include/amugame/render/triangle.h"
 
 
 constexpr int SCREEN_WIDTH = 800;

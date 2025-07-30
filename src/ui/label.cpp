@@ -2,10 +2,10 @@
 // Created by alexm on 2025-07-29.
 //
 
-#include "../include/label.h"
+#include "../../include/amugame/ui/label.h"
 
 Label createLabel(SDL_Renderer *renderer, const std::string &text, TTF_Font *font, const SDL_Color textColor, float x,
-    float y) {
+                  float y) {
     Label label;
     label.text = text;
     label.font = font;

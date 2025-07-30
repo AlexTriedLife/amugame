@@ -16,6 +16,7 @@ enum class TRIANGLE_TYPE {
 class Triangle {
 public:
     Triangle(SDL_FPoint p1,SDL_FPoint p2,SDL_FPoint p3, SDL_FColor color);
+    ~Triangle();
     void render(SDL_Renderer* renderer);
 
 private:

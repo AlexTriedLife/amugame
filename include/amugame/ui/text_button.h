@@ -6,7 +6,7 @@
 #define TEXT_BUTTON_H
 #include <SDL3_ttf/SDL_ttf.h>
 #include <string>
-#include "button.h"
+#include "amugame/ui/button.h"
 
 
 class TextButton : public Button {

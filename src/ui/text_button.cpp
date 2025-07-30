@@ -2,7 +2,7 @@
 // Created by alexm on 2025-07-20.
 //
 
-#include "../include/text_button.h"
+#include "amugame/ui/text_button.h"
 
 TextButton::TextButton(float x, float y, float w, float h, SDL_Renderer *renderer, TTF_Font *font,
                        const std::string &text, SDL_Color textColor) : Button(x, y, w, h), m_renderer(renderer),

@@ -2,8 +2,7 @@
 // Created by alexm on 2025-07-11.
 //
 
-#include "../include/button.h"
-
+#include "amugame/ui/button.h"
 
 Button::Button(float x, float y, float w, float h) {
     m_rect = {x,y,w,h};
