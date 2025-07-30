@@ -6,6 +6,7 @@
 #include <memory>
 #include <SDL3_ttf/SDL_ttf.h>
 
+#include "triangle.h"
 
 
 constexpr int SCREEN_WIDTH = 800;
@@ -45,11 +46,12 @@ int main(int argc, const char *argv[]) {
     Uint64 currentTime{SDL_GetPerformanceCounter()};
     double deltaTime{0.00};
     double totalTime{0.00};
+    SDL_FColor color = {255,0,255,255};
 
     if (!init(&gWindow, &gRenderer)) {
         SDL_Log("Failed to initialize program");
     }
-
+    Triangle tri({100,100},{300,100},{200,300},color);
     // main loop
     bool quit{false};
     while (!quit) {
@@ -68,6 +70,7 @@ int main(int argc, const char *argv[]) {
 
 
         SDL_RenderClear(gRenderer);
+        tri.render(gRenderer);
         SDL_RenderPresent(gRenderer);
         SDL_Delay(16); // roughly 60 fps
     }

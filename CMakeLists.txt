@@ -18,6 +18,7 @@ add_executable(amugame
         src/button.cpp
         src/text_button.cpp
         src/label.cpp
+        src/triangle.cpp
 
 )
 target_include_directories(amugame PRIVATE
